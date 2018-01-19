@@ -12,4 +12,4 @@ messagesource:
   basename: i18n/messages
   cache-seconds: 3600
   encoding: UTF-8    
-profiles: model
+profiles: reflash-model
