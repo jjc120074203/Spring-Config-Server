@@ -1,6 +1,3 @@
-server:
-  port: 1500
-
 spring:
   application:
     name: spring-cloud-model
@@ -15,14 +12,4 @@ messagesource:
   basename: i18n/messages
   cache-seconds: 3600
   encoding: UTF-8    
-#注册中心指向start    
-eureka:
-  instance:
-#    instance-id: spring-cloud-model
-#    appname: ${spring.application.name} 
-    prefer-ip-address: true
-  client: 
-    service-url: 
-      defaultZone: http://admin:1q2w3e4r!@127.0.0.1:1234/eureka/
-
-#注册中心指向end
+profiles: model
