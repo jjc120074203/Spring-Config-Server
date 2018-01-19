@@ -7,8 +7,6 @@ spring:
   rabbitmq:
     host: 10.16.117.191
     port: 31129
-    username: guest
-    password: guest
 msg:
   sys_props_switch: 3
 messagesource:
