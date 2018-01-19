@@ -1,4 +1,4 @@
-# prefix 访问前缀 
+# prefix 访问前缀
 zuul:
   routes: 
     abc: 
