@@ -1,0 +1,8 @@
+# prefix 访问前缀
+zuul:
+  routes: 
+    abc: 
+      path: /file/**
+#      stripPrefix: true
+      serviceId: spring-cloud-model
+##  stripPrefix: false  ip+/spring-cloud-file-system/hello
