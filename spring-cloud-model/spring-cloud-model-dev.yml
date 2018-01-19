@@ -6,6 +6,9 @@ spring:
     url: jdbc:mysql://localhost:3306/spring-boot?useUnicode=true&characterEncoding=utf-8
     username: root
     password: admin
+  rabbitmq:
+    host: 10.16.117.191
+    port: 31129
 msg:
   sys_props_switch: 3
 messagesource:
