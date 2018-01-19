@@ -1,0 +1,22 @@
+server:
+  port: 3001
+
+spring:
+  application:
+    name: spring-cloud-portal-bak
+
+feign:
+   hystrix:
+     enabled: true 
+    
+#注册中心指向start    
+eureka:
+  client: 
+    service-url: 
+      defaultZone: http://admin:1q2w3e4r!@127.0.0.1:1234/eureka/
+    
+#注册中心指向end
+
+#解决第一次请求超时方法1.延长请求等待时间2.禁用等待时间一直等待
+hystrix.command.HystrixCommandKey.execution.isolation.thread.timeoutInMilliseconds: 5000
+#hystrix.command.HystrixCommandKey.execution.timeout.enabled: false
